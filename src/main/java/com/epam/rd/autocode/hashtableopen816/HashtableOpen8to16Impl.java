@@ -48,6 +48,8 @@ public class HashtableOpen8to16Impl implements HashtableOpen8to16 {
 
         if (hashTableEntry != null) {
             hashTableEntry.remove();
+            hashTableEntry.setKey(null);
+            hashTableEntry.setValue(null);
             size--;
             decreaseSize();
         }

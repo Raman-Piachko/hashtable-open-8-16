@@ -1,7 +1,7 @@
 package com.epam.rd.autocode.hashtableopen816;
 
 public class HashTableEntry {
-    private int key;
+    private Integer key;
     private Object value;
     private boolean isRemoved;
 
@@ -19,10 +19,13 @@ public class HashTableEntry {
     }
 
     public int getKey() {
-        return key;
+        if(key!=null){
+            return key;
+        }
+        return 0;
     }
 
-    public void setKey(int key) {
+    public void setKey(Integer key) {
         this.key = key;
     }
 
